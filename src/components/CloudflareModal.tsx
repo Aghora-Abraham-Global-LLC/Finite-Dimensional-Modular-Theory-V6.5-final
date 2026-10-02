@@ -14,7 +14,7 @@ export const CloudflareModal: React.FC<CloudflareModalProps> = ({ isOpen, onClos
   const subdomain = 'finite.bhutadamarasena.com';
   const apexDomain = 'bhutadamarasena.com';
   const cnameRecord = 'finite';
-  const cnameTarget = 'finite-bhutadamarasena-com.pages.dev';
+  const cnameTarget = 'finite-dimensional-modular-theory-v6-5-final.pages.dev';
 
   const copyToClipboard = (text: string, key: string) => {
     navigator.clipboard.writeText(text);
@@ -125,7 +125,7 @@ export const CloudflareModal: React.FC<CloudflareModalProps> = ({ isOpen, onClos
           <div className="rounded-lg border border-slate-800 bg-slate-950/70 p-3 space-y-2 text-xs text-slate-300">
             <div className="flex items-start gap-2">
               <span className="h-5 w-5 rounded-full bg-slate-800 text-cyan-400 flex items-center justify-center font-mono font-bold shrink-0 text-[11px]">1</span>
-              <span>Open Cloudflare Dashboard → <strong>Workers &amp; Pages</strong> → Select project <code className="text-cyan-300 font-mono bg-slate-900 px-1 py-0.5 rounded">finite-bhutadamarasena-com</code>.</span>
+              <span>Open Cloudflare Dashboard → <strong>Workers &amp; Pages</strong> → Select project <code className="text-cyan-300 font-mono bg-slate-900 px-1 py-0.5 rounded">finite-dimensional-modular-theory-v6-5-final</code>.</span>
             </div>
             <div className="flex items-start gap-2">
               <span className="h-5 w-5 rounded-full bg-slate-800 text-cyan-400 flex items-center justify-center font-mono font-bold shrink-0 text-[11px]">2</span>
@@ -153,7 +153,7 @@ export const CloudflareModal: React.FC<CloudflareModalProps> = ({ isOpen, onClos
             <div className="flex items-center justify-between text-slate-400 text-[11px]">
               <span>Direct Build &amp; Deploy:</span>
               <button
-                onClick={() => copyToClipboard('npm run build && npx wrangler pages deploy dist --project-name=finite-bhutadamarasena-com', 'cmd')}
+                onClick={() => copyToClipboard('npm run build && npx wrangler pages deploy dist --project-name=finite-dimensional-modular-theory-v6-5-final', 'cmd')}
                 className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-[11px]"
               >
                 {copiedKey === 'cmd' ? <Check className="h-3 w-3 text-emerald-400" /> : <Copy className="h-3 w-3" />}
@@ -161,7 +161,7 @@ export const CloudflareModal: React.FC<CloudflareModalProps> = ({ isOpen, onClos
               </button>
             </div>
             <pre className="bg-[#030712] p-2.5 rounded border border-slate-800 text-emerald-400 overflow-x-auto text-[11px] leading-relaxed">
-npm run build && npx wrangler pages deploy dist --project-name=finite-bhutadamarasena-com
+npm run build && npx wrangler pages deploy dist --project-name=finite-dimensional-modular-theory-v6-5-final
             </pre>
           </div>
         </div>

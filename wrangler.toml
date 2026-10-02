@@ -1,5 +1,5 @@
 # Cloudflare Pages / Workers Configuration for finite.bhutadamarasena.com
-name = "finite-bhutadamarasena-com"
+name = "finite-dimensional-modular-theory-v6-5-final"
 compatibility_date = "2024-10-01"
 pages_build_output_dir = "dist"
 
