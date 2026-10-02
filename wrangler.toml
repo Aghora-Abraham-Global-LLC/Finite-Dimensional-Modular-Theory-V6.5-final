@@ -6,7 +6,3 @@ pages_build_output_dir = "dist"
 [vars]
 DOMAIN = "finite.bhutadamarasena.com"
 ENVIRONMENT = "production"
-
-# Custom routing for Cloudflare Pages custom subdomain
-# Subdomain: finite.bhutadamarasena.com
-# Apex domain: bhutadamarasena.com

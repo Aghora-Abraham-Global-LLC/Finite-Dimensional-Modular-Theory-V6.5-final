@@ -101,7 +101,10 @@ export const PaperReader: React.FC = () => {
         <header className="rounded-2xl border border-slate-800 bg-slate-900/90 p-8 shadow-2xl text-center space-y-4">
           <div className="flex flex-wrap items-center justify-center gap-2 font-mono text-xs text-cyan-400">
             <span className="rounded bg-cyan-950 px-2.5 py-0.5 border border-cyan-800/60">
-              Preprint DOI: 10.5281/zenodo.23079423
+              Software &amp; Research DOI: 10.5281/zenodo.23097967
+            </span>
+            <span className="rounded bg-slate-800 px-2.5 py-0.5 border border-slate-700 text-slate-300">
+              Concept Parent: 10.5281/zenodo.23079423
             </span>
             <span className="rounded bg-slate-800 px-2.5 py-0.5 border border-slate-700 text-slate-300">
               October 1, 2026
@@ -145,7 +148,7 @@ export const PaperReader: React.FC = () => {
             Abstract
           </h2>
           <p className="text-sm text-slate-300 leading-relaxed">
-            We establish the Definitive Version 6.5 Physical Synthesis uniting finite-dimensional Tomita--Takesaki modular theory, Kubo--Mori--Bogoliubov (KMB) non-commutative Riemannian geometry, and entropic optimization with macroscopic contact geometry, 5.0PN Christodoulou non-linear gravitational memory, and Effective One-Body (EOB) topological automata (Preprint DOI: 10.5281/zenodo.23079423). Grounded in comprehensive simulations and 28 automated tests from the relativistic <em className="text-cyan-300 font-sans">TriBody Workstation</em>, Version 6.5 systematically resolves the physical gaps, structural omissions, and formal ambiguities identified in prior iterations.
+            We establish the Definitive Version 6.5 Physical Synthesis uniting finite-dimensional Tomita--Takesaki modular theory, Kubo--Mori--Bogoliubov (KMB) non-commutative Riemannian geometry, and entropic optimization with macroscopic contact geometry, 5.0PN Christodoulou non-linear gravitational memory, and Effective One-Body (EOB) topological automata (Preprint DOI: 10.5281/zenodo.23079423, Software DOI: 10.5281/zenodo.23097967). Grounded in comprehensive simulations and 28 automated tests from the relativistic <em className="text-cyan-300 font-sans">TriBody Workstation</em>, Version 6.5 systematically resolves the physical gaps, structural omissions, and formal ambiguities identified in prior iterations.
           </p>
         </section>
 
@@ -257,7 +260,7 @@ export const PaperReader: React.FC = () => {
             References
           </h2>
           <ol className="list-decimal pl-5 space-y-1 text-slate-400">
-            <li>A. A. A. Ghulam-e-Shah-e-Unmani, <em>Finite-Dimensional Modular Theory (Version 6.5)</em>, DOI: 10.5281/zenodo.23079423 (2026).</li>
+            <li>A. A. A. Ghulam-e-Shah-e-Unmani, <em>Finite-Dimensional Modular Theory (Version 6.5)</em>, Software DOI: 10.5281/zenodo.23097967, Preprint DOI: 10.5281/zenodo.23079423 (2026).</li>
             <li>D. Petz, <em>Sufficient subalgebras and relative entropy</em>, Commun. Math. Phys. 105, 123 (1986).</li>
             <li>D. Christodoulou, <em>Nonlinear nature of gravitation and gravitational-wave experiments</em>, Phys. Rev. Lett. 67, 1486 (1991).</li>
             <li>A. Bravetti et al., <em>Contact geometry and thermodynamics</em>, Ann. Phys. 376, 17 (2017).</li>

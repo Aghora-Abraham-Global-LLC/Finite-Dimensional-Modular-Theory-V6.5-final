@@ -77,7 +77,7 @@ export const App: React.FC = () => {
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[11px] text-slate-400 font-mono">
-                  <span>Preprint DOI: 10.5281/zenodo.23079423</span>
+                  <span>Software DOI: 10.5281/zenodo.23097967</span>
                   <span className="hidden sm:inline">•</span>
                   <span className="hidden sm:inline text-emerald-400">28/28 Tests Certified</span>
                 </div>
@@ -97,7 +97,7 @@ export const App: React.FC = () => {
               </button>
 
               <a
-                href="https://doi.org/10.5281/zenodo.23079423"
+                href="https://doi.org/10.5281/zenodo.23097967"
                 target="_blank"
                 rel="noreferrer"
                 className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-900/80 text-xs font-mono text-slate-300 hover:bg-slate-800 hover:text-white transition"
@@ -174,12 +174,12 @@ export const App: React.FC = () => {
             <span className="text-emerald-400">Cryptographic Digest Verified</span>
             <span>•</span>
             <a
-              href="https://doi.org/10.5281/zenodo.23079423"
+              href="https://doi.org/10.5281/zenodo.23097967"
               target="_blank"
               rel="noreferrer"
               className="text-cyan-400 hover:underline"
             >
-              DOI: 10.5281/zenodo.23079423
+              DOI: 10.5281/zenodo.23097967
             </a>
           </div>
         </div>
