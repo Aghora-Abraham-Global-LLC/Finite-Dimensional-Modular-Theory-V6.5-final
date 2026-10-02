@@ -13,6 +13,7 @@ import {
   ExternalLink,
   Github,
   FileCode,
+  Cloud,
 } from 'lucide-react';
 import { TriBodySimulator } from './components/TriBodySimulator';
 import { MemoryBMSLab } from './components/MemoryBMSLab';
@@ -23,6 +24,7 @@ import { EOBAutomataLab } from './components/EOBAutomataLab';
 import { MPSMatrixLab } from './components/MPSMatrixLab';
 import { TestBatteryRunner } from './components/TestBatteryRunner';
 import { PaperReader } from './components/PaperReader';
+import { CloudflareModal } from './components/CloudflareModal';
 
 export type TabKey =
   | 'tribody'
@@ -37,6 +39,7 @@ export type TabKey =
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabKey>('tribody');
+  const [isCloudflareOpen, setIsCloudflareOpen] = useState<boolean>(false);
 
   const tabs: { key: TabKey; label: string; icon: React.ReactNode; badge?: string }[] = [
     { key: 'tribody', label: 'TriBody Workstation', icon: <Orbit className="h-4 w-4" />, badge: 'Section 4' },
@@ -83,11 +86,21 @@ export const App: React.FC = () => {
 
             {/* Quick Actions */}
             <div className="flex items-center gap-2 sm:gap-3">
+              <button
+                onClick={() => setIsCloudflareOpen(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-orange-500/50 bg-orange-950/40 text-xs font-mono text-orange-300 hover:bg-orange-900/60 hover:text-white transition shadow-sm"
+                title="Cloudflare Subdomain Settings for finite.bhutadamarasena.com"
+              >
+                <Cloud className="h-3.5 w-3.5 text-orange-400" />
+                <span className="font-semibold hidden md:inline">finite.bhutadamarasena.com</span>
+                <span className="font-semibold md:hidden">Cloudflare</span>
+              </button>
+
               <a
                 href="https://doi.org/10.5281/zenodo.23079423"
                 target="_blank"
                 rel="noreferrer"
-                className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-900/80 text-xs font-mono text-slate-300 hover:bg-slate-800 hover:text-white transition"
+                className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-900/80 text-xs font-mono text-slate-300 hover:bg-slate-800 hover:text-white transition"
               >
                 <ExternalLink className="h-3.5 w-3.5" /> Zenodo DOI
               </a>
@@ -171,6 +184,12 @@ export const App: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      {/* Cloudflare Subdomain Setup Modal */}
+      <CloudflareModal
+        isOpen={isCloudflareOpen}
+        onClose={() => setIsCloudflareOpen(false)}
+      />
     </div>
   );
 };
