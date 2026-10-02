@@ -1,0 +1,8 @@
+{
+  "name": "Finite-Dimensional Modular Theory V6.5 & TriBody Workstation",
+  "description": "Definitive physical synthesis platform uniting finite-dimensional modular theory, contact thermodynamics, 5.0PN Christodoulou memory, BMS soft hair, K=16 Padé bath reservoirs, EOB island automata, and the 28-test TriBody Workstation benchmark suite.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
